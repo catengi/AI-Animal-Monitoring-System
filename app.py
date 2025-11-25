@@ -6,7 +6,6 @@ import json
 import threading # เพิ่ม: สำหรับรัน Flask ใน Thread แยก
 import time
 
-# เพิ่ม: Import Flask สำหรับสร้าง API
 from flask import Flask, jsonify
 from werkzeug.serving import run_simple # ใช้ run_simple เพื่อการจัดการ Thread ที่ดีกว่า app.run ปกติ
 
@@ -891,4 +890,5 @@ if __name__ == "__main__":
 
     window = MonitorApp()
     window.show()
+
     sys.exit(app.exec())
